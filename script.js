@@ -2,6 +2,12 @@ let output = document.getElementById('output');
 let submit = document.getElementById('submit');
 let again = document.getElementById('again');
 
+input.addEventListener('keyup', function (e) {
+    if (e.keyCode === 13) {
+        submit.click();
+    }
+});
+
 function reverseChar() {    
     var input = document.getElementById('input').value;
     var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
