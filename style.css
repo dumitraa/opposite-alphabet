@@ -24,8 +24,11 @@ h1 {
     width: 350px;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 1px 0 black, 0 -1px black, 0 1px black, -1px 0 black;
     margin-bottom: 5px;
+}
+
+#input:focus {
+    box-shadow: 0 -1px orange, 1px 0 orange, 0 1px orange, -1px 0 orange;
 }
 
 #submit, #again{
@@ -50,4 +53,8 @@ h1 {
     box-shadow: 1px 0 black, 0 -1px black, 0 1px black, -1px 0 black;
     transition: 0.5s;
     cursor: pointer;
+}
+
+#submit:active, #again:active {
+    background-color: rgb(252, 205, 205)
 }
