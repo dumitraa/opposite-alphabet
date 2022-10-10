@@ -1,5 +1,6 @@
-let output = document.getElementById('output')
+let output = document.getElementById('output');
 let submit = document.getElementById('submit');
+let again = document.getElementById('again');
 
 function reverseChar() {    
     var input = document.getElementById('input').value;
@@ -28,4 +29,10 @@ function reverseChar() {
     output.innerHTML = decoded_string;
 };
 
+function reset() {
+    document.getElementById('input').value = ''
+    output.innerHTML = ''
+}
+
 submit.addEventListener ('click', reverseChar);
+again.addEventListener ('click', reset)
