@@ -1,13 +1,5 @@
-p {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-input {
-    height: 20px;
-    width: 350px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 1px 0 black, 0 -1px black, 0 1px black, -1px 0 black;
+* {
+    font-family: 'Times New Roman', Times, serif
 }
 
 .text {
@@ -19,4 +11,28 @@ input {
     background-color: antiquewhite;
     padding: 50px;
     margin: 25px;
+}
+
+#input {
+    height: 20px;
+    width: 350px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 0 black, 0 -1px black, 0 1px black, -1px 0 black;
+}
+
+#submit {
+    height: 24px;
+    width: 75px;
+    border-radius: 10px;
+    border: 20px;
+    margin: 15px;
+    background-color: pink;
+}
+
+#submit:hover {
+    background-color: white;
+    box-shadow: 1px 0 black, 0 -1px black, 0 1px black, -1px 0 black;
+    transition: 1s;
+    cursor: pointer;
 }
